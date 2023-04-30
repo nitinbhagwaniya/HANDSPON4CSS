@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    background-image: linear-gradient(to right,red,green,yellow);
+    height: 30px;
+    width: 1346px;
+    padding: 8px 600px;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 7px 3px;
+}  
+
+.list{
+    display: flex;
+     justify-content: center; 
+     text-align: center;  
+     margin: 10px 260px;  
+     width: 870px; 
+     height: 70px; 
+      border-radius: 15px;
+     padding: 3px 40px 15px 40px;   
+     border: 2px solid red;
+    
+     background-color: rgba(80, 170, 188, 0.637); 
+}
+.container{
+    border: 5px solid chocolate;
+    background-color: rgb(127, 255, 212);
+    border-radius: 15px;
+    height: 166px;
+    width: 1341px;
+    margin: 0px 8px;
+
+}
+
+.boxs{
+    display: flex;
+    background-color: aqua;
+    height: 80px;
+    width: 400px;
+    border: 2px solid green;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.box1{
+    float: left;
+    clear: left;
+    margin:0px 20px;
+    padding:9px 8px;
+
+}
+.box2{
+    float: right;
+    clear: right;
+    margin:-82px 462px ;
+    padding:9px 8px;
+}
+.box3{
+    float: right;
+    clear: right;
+    margin:-1px 460px;
+    padding:9px 8px;
+}
+.box4{
+    float: right;
+    clear: right;
+    margin: -159px  8px;
+    padding:9px 8px;
+}
+ 
+.highlight{
+    background-image: linear-gradient(to right,red,yellow,red);
+    height: 30px;
+    width: 1366px;
+    padding: 8px 525px;
+    text-decoration: underline;
+    font-weight: bold;
+    margin: 156px -5px;
+    font-size: 1rem; 
+    align-items: center;
+}
+section{
+    height: 350px;
+    border: 5px solid green;
+    background: radial-gradient(blue, rgb(67, 154, 189), lightgreen);
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
+    position: relative;
+    margin-top: -130px;
+
+
+}
+
+.midbox{
+    font-size: 18px;
+    width: 230px;
+    height: 130px;
+    border: 3px solid brown;
+    background-color: rgb(226, 223, 30);
+    border-radius: 15px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+    color: maroon;
+}
+.head{
+  grid-area: head;
+  background-color: rgb(235, 52, 52);
+  color: white;
+ text-align: center;
+ font-size: 30px;
+ padding-bottom: 10px;
+ margin: 0px 0px;
+
+}
+
+.gridcontainer{
+    margin: 30px 0;
+    display: grid;
+    color: white;
+    grid-template-columns: 1fr 1fr 1fr 78px;
+    grid-template-areas: 
+    'head head head head'
+    'box1 box2 box3 aside'
+    'cont cont cont aside'
+    'foot foot foot foot';
+    gap: 20px;
+}
+
+.gbox1{
+    grid-area: box1;
+    background-color: rgb(94, 197, 94);
+    text-align: center;
+    font-size: 35px;
+}
+.gbox2{
+    grid-area: box2;
+    background-color: rgb(35, 133, 172);
+    font-size: 35px;
+}
+.gbox3{
+    grid-area: box3;
+    background-color: blue;
+    font-size: 25px;
+}
+
+aside{
+    grid-area: aside;
+    background-color: rgb(49, 48, 48);
+    font-size: 20px;
+}
+
+.maincontainer{
+    grid-area: cont;
+    background-color: orange;
+    font-size: 23px;
+    padding-bottom: 60px;
+}
+footer{
+    grid-area: foot;
+    color: black;
+    background-color: rgb(89, 241, 191);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
